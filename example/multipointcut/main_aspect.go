@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"regexp"
 
-	asp "github.com/AkihiroSuda/aspectgo/aspect"
+	asp "github.com/elevenzqx/aspectgo/aspect"
 )
 
 // Aspect1 is ineffective because it is currently overrided by Aspect2.
@@ -13,7 +13,7 @@ type Aspect1 struct {
 }
 
 func (a *Aspect1) Pointcut() asp.Pointcut {
-	pkg := regexp.QuoteMeta("github.com/AkihiroSuda/aspectgo/example/multipointcut")
+	pkg := regexp.QuoteMeta("github.com/elevenzqx/aspectgo/example/multipointcut")
 	s := regexp.QuoteMeta(pkg + ".sayHello")
 	return asp.NewCallPointcutFromRegexp(s)
 }
@@ -30,7 +30,7 @@ type Aspect2 struct {
 }
 
 func (a *Aspect2) Pointcut() asp.Pointcut {
-	pkg := regexp.QuoteMeta("github.com/AkihiroSuda/aspectgo/example/multipointcut")
+	pkg := regexp.QuoteMeta("github.com/elevenzqx/aspectgo/example/multipointcut")
 	s := pkg + ".*"
 	return asp.NewCallPointcutFromRegexp(s)
 }

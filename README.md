@@ -23,17 +23,17 @@ Your suggestion and PR are welcome.
 
 ## Install
 
-    $ go install github.com/AkihiroSuda/aspectgo/cmd/aspectgo
+    $ go install github.com/elevenzqx/aspectgo/cmd/aspectgo
 
 ## Example
 
-    $ go build github.com/AkihiroSuda/aspectgo/example/hello && ./hello
+    $ go build github.com/elevenzqx/aspectgo/example/hello && ./hello
     hello
     $ aspectgo \
       -w /tmp/wovengopath \                         # output gopath
-      -t github.com/AkihiroSuda/aspectgo/example/hello \  # target package
+      -t github.com/elevenzqx/aspectgo/example/hello \  # target package
       example/hello/main_aspect.go                  # aspect file
-    $ GOPATH=/tmp/wovengopath go build github.com/AkihiroSuda/aspectgo/example/hello && ./hello
+    $ GOPATH=/tmp/wovengopath go build github.com/elevenzqx/aspectgo/example/hello && ./hello
     BEFORE hello
     hello
     AFTER hello
@@ -47,7 +47,7 @@ import (
 	"fmt"
 	"regexp"
 
-	asp "github.com/AkihiroSuda/aspectgo/aspect"
+	asp "github.com/elevenzqx/aspectgo/aspect"
 )
 
 // ExampleAspect implements interface asp.Aspect
@@ -56,7 +56,7 @@ type ExampleAspect struct {
 
 // Executed on compilation-time
 func (a *ExampleAspect) Pointcut() asp.Pointcut {
-	pkg := regexp.QuoteMeta("github.com/AkihiroSuda/aspectgo/example/hello")
+	pkg := regexp.QuoteMeta("github.com/elevenzqx/aspectgo/example/hello")
 	s := pkg + ".*"
 	return asp.NewCallPointcutFromRegexp(s)
 }
@@ -92,7 +92,7 @@ func main() {
 
 You can also execute other examples as follows:
 
-    $ go test -v github.com/AkihiroSuda/aspectgo/example
+    $ go test -v github.com/elevenzqx/aspectgo/example
 
 If the output is hard to read, please add the `-parallel 1` flag to `go test`.
 

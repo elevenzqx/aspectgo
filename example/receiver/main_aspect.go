@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"regexp"
 
-	asp "github.com/AkihiroSuda/aspectgo/aspect"
+	asp "github.com/elevenzqx/aspectgo/aspect"
 )
 
 // SAspect won't be woven, because it's not an "execution" pointcut
@@ -12,7 +12,7 @@ type SAspect struct {
 }
 
 func (a *SAspect) Pointcut() asp.Pointcut {
-	s := regexp.QuoteMeta("(*github.com/AkihiroSuda/aspectgo/example/receiver.S).Foo")
+	s := regexp.QuoteMeta("(*github.com/elevenzqx/aspectgo/example/receiver.S).Foo")
 	return asp.NewCallPointcutFromRegexp(s)
 }
 func (a *SAspect) Advice(ctx asp.Context) []interface{} {
@@ -24,7 +24,7 @@ type IAspect struct {
 }
 
 func (a *IAspect) Pointcut() asp.Pointcut {
-	s := regexp.QuoteMeta("(github.com/AkihiroSuda/aspectgo/example/receiver.I).Foo")
+	s := regexp.QuoteMeta("(github.com/elevenzqx/aspectgo/example/receiver.I).Foo")
 	return asp.NewCallPointcutFromRegexp(s)
 }
 func (a *IAspect) Advice(ctx asp.Context) []interface{} {

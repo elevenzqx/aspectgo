@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	asp "github.com/AkihiroSuda/aspectgo/aspect"
+	asp "github.com/elevenzqx/aspectgo/aspect"
 )
 
 // ExampleAspect implements interface asp.Aspect

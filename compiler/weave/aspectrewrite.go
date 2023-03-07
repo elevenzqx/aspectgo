@@ -13,8 +13,8 @@ import (
 
 	"golang.org/x/tools/go/loader"
 
-	"github.com/AkihiroSuda/aspectgo/compiler/consts"
-	"github.com/AkihiroSuda/aspectgo/compiler/parse"
+	"github.com/elevenzqx/aspectgo/compiler/consts"
+	"github.com/elevenzqx/aspectgo/compiler/parse"
 )
 
 func rewriteAspectFile(wovenGOPATH string, af *parse.AspectFile) ([]string, error) {

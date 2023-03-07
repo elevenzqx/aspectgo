@@ -4,14 +4,14 @@ import (
 	"fmt"
 	"regexp"
 
-	asp "github.com/AkihiroSuda/aspectgo/aspect"
+	asp "github.com/elevenzqx/aspectgo/aspect"
 )
 
 type Pkg1SAspect struct {
 }
 
 func (a *Pkg1SAspect) Pointcut() asp.Pointcut {
-	s := regexp.QuoteMeta("(*github.com/AkihiroSuda/aspectgo/example/receiver2/pkg1.S).Foo")
+	s := regexp.QuoteMeta("(*github.com/elevenzqx/aspectgo/example/receiver2/pkg1.S).Foo")
 	return asp.NewCallPointcutFromRegexp(s)
 }
 func (a *Pkg1SAspect) Advice(ctx asp.Context) []interface{} {

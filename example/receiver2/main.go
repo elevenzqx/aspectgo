@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/AkihiroSuda/aspectgo/example/receiver2/pkg1"
-	. "github.com/AkihiroSuda/aspectgo/example/receiver2/pkg1"
-	xpkg1 "github.com/AkihiroSuda/aspectgo/example/receiver2/pkg1"
-	"github.com/AkihiroSuda/aspectgo/example/receiver2/pkg2"
-	xpkg2 "github.com/AkihiroSuda/aspectgo/example/receiver2/pkg2"
+
+	"github.com/elevenzqx/aspectgo/example/receiver2/pkg1"
+	. "github.com/elevenzqx/aspectgo/example/receiver2/pkg1"
+	xpkg1 "github.com/elevenzqx/aspectgo/example/receiver2/pkg1"
+	"github.com/elevenzqx/aspectgo/example/receiver2/pkg2"
+	xpkg2 "github.com/elevenzqx/aspectgo/example/receiver2/pkg2"
 )
 
 func main() {

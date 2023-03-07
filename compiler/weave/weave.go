@@ -10,10 +10,10 @@ import (
 
 	"golang.org/x/tools/go/loader"
 
-	"github.com/AkihiroSuda/aspectgo/aspect"
-	"github.com/AkihiroSuda/aspectgo/compiler/parse"
-	"github.com/AkihiroSuda/aspectgo/compiler/util"
-	"github.com/AkihiroSuda/aspectgo/compiler/weave/match"
+	"github.com/elevenzqx/aspectgo/aspect"
+	"github.com/elevenzqx/aspectgo/compiler/parse"
+	"github.com/elevenzqx/aspectgo/compiler/util"
+	"github.com/elevenzqx/aspectgo/compiler/weave/match"
 )
 
 // Weave weaves aspect files to the target package and emit the woven files to wovenGOPATH.

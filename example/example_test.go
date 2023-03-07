@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	agcli "github.com/AkihiroSuda/aspectgo/compiler/cli"
+	agcli "github.com/elevenzqx/aspectgo/compiler/cli"
 )
 
 var (
@@ -17,7 +17,7 @@ var (
 )
 
 const (
-	exPackage = "github.com/AkihiroSuda/aspectgo/example"
+	exPackage = "github.com/elevenzqx/aspectgo/example"
 )
 
 func TestMain(m *testing.M) {

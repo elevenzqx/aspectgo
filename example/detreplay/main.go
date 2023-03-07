@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/AkihiroSuda/aspectgo/example/detreplay/worker"
+	"github.com/elevenzqx/aspectgo/example/detreplay/worker"
 )
 
 func main() {

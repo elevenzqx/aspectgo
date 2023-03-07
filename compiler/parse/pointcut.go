@@ -11,8 +11,8 @@ import (
 	"path/filepath"
 	"text/template"
 
-	"github.com/AkihiroSuda/aspectgo/aspect"
-	"github.com/AkihiroSuda/aspectgo/compiler/consts"
+	"github.com/elevenzqx/aspectgo/aspect"
+	"github.com/elevenzqx/aspectgo/compiler/consts"
 )
 
 // compile the aspect and get Pointcut data

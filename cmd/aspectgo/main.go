@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/AkihiroSuda/aspectgo/compiler/cli"
+	"github.com/elevenzqx/aspectgo/compiler/cli"
 )
 
 func main() {

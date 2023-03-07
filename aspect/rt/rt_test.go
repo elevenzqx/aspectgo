@@ -5,7 +5,7 @@ import (
 	"runtime/debug"
 	"testing"
 
-	asp "github.com/AkihiroSuda/aspectgo/aspect"
+	asp "github.com/elevenzqx/aspectgo/aspect"
 )
 
 type dummyAspect struct {

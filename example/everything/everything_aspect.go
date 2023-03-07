@@ -1,7 +1,7 @@
 package main
 
 import (
-	asp "github.com/AkihiroSuda/aspectgo/aspect"
+	asp "github.com/elevenzqx/aspectgo/aspect"
 )
 
 // EverythingAspect implements interface asp.Aspect.

@@ -10,9 +10,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/AkihiroSuda/aspectgo/compiler/gopath"
-	"github.com/AkihiroSuda/aspectgo/compiler/parse"
-	"github.com/AkihiroSuda/aspectgo/compiler/weave"
+	"github.com/elevenzqx/aspectgo/compiler/gopath"
+	"github.com/elevenzqx/aspectgo/compiler/parse"
+	"github.com/elevenzqx/aspectgo/compiler/weave"
 )
 
 // Compiler is the type for the AspectGo compiler.

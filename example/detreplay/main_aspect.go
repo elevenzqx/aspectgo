@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	asp "github.com/AkihiroSuda/aspectgo/aspect"
+	asp "github.com/elevenzqx/aspectgo/aspect"
 
-	"github.com/AkihiroSuda/aspectgo/example/detreplay/worker"
+	"github.com/elevenzqx/aspectgo/example/detreplay/worker"
 )
 
 type DetAspect struct {

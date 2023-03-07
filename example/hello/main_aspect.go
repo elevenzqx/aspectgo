@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"regexp"
 
-	asp "github.com/AkihiroSuda/aspectgo/aspect"
+	asp "github.com/elevenzqx/aspectgo/aspect"
 )
 
 // ExampleAspect implements interface asp.Aspect
@@ -13,7 +13,7 @@ type ExampleAspect struct {
 
 // Executed on compilation-time
 func (a *ExampleAspect) Pointcut() asp.Pointcut {
-	pkg := regexp.QuoteMeta("github.com/AkihiroSuda/aspectgo/example/hello")
+	pkg := regexp.QuoteMeta("github.com/elevenzqx/aspectgo/example/hello")
 	s := pkg + ".*"
 	return asp.NewCallPointcutFromRegexp(s)
 }

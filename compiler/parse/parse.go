@@ -8,8 +8,8 @@ import (
 
 	"golang.org/x/tools/go/loader"
 
-	"github.com/AkihiroSuda/aspectgo/aspect"
-	"github.com/AkihiroSuda/aspectgo/compiler/consts"
+	"github.com/elevenzqx/aspectgo/aspect"
+	"github.com/elevenzqx/aspectgo/compiler/consts"
 )
 
 const aspectPackagePath = consts.AspectGoPackagePath + "/aspect"

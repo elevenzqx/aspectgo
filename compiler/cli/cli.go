@@ -7,8 +7,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/AkihiroSuda/aspectgo/compiler"
-	"github.com/AkihiroSuda/aspectgo/compiler/util"
+	"github.com/elevenzqx/aspectgo/compiler"
+	"github.com/elevenzqx/aspectgo/compiler/util"
 )
 
 // Main is the CLI for AspectGo.

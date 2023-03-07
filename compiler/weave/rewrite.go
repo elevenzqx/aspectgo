@@ -15,10 +15,10 @@ import (
 
 	"golang.org/x/tools/go/loader"
 
-	"github.com/AkihiroSuda/aspectgo/aspect"
-	"github.com/AkihiroSuda/aspectgo/compiler/consts"
-	"github.com/AkihiroSuda/aspectgo/compiler/gopath"
-	"github.com/AkihiroSuda/aspectgo/compiler/util"
+	"github.com/elevenzqx/aspectgo/aspect"
+	"github.com/elevenzqx/aspectgo/compiler/consts"
+	"github.com/elevenzqx/aspectgo/compiler/gopath"
+	"github.com/elevenzqx/aspectgo/compiler/util"
 )
 
 func rewriteProgram(wovenGOPATH string, rw *rewriter) ([]string, error) {
